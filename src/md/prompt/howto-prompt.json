@@ -1,0 +1,79 @@
+{
+    "howtoPrompts": [
+      {
+        "id": 1,
+        "title": "Configurer un Serveur Node.js avec Express",
+        "description": "Guide étape par étape pour configurer un serveur web basique en utilisant Node.js et le framework Express.",
+        "steps": [
+          {
+            "step": "Installer Node.js et npm sur votre machine.",
+            "duration": "15 minutes",
+            "status": "à faire",
+            "notes": "Vérifier la version de Node.js avec node -v."
+          },
+          {
+            "step": "Initialiser un nouveau projet Node.js avec npm init.",
+            "duration": "10 minutes",
+            "status": "à faire",
+            "notes": "Suivre les instructions de l'invite pour initialiser le projet."
+          },
+          {
+            "step": "Installer Express via npm et créer un fichier server.js.",
+            "duration": "20 minutes",
+            "status": "à faire",
+            "notes": "Utiliser npm install express pour ajouter Express au projet."
+          },
+          {
+            "step": "Configurer un routeur de base dans server.js pour répondre aux requêtes HTTP.",
+            "duration": "30 minutes",
+            "status": "à faire",
+            "notes": "Créer des routes GET et POST comme exemples."
+          },
+          {
+            "step": "Démarrer le serveur et tester avec un navigateur ou un client HTTP comme Postman.",
+            "duration": "15 minutes",
+            "status": "à faire",
+            "notes": "Utiliser node server.js pour démarrer le serveur."
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Configurer un Serveur Node.js avec Express",
+        "description": "Guide étape par étape pour configurer un serveur web basique en utilisant Node.js et le framework Express.",
+        "steps": [
+          {
+            "step": "Installer Node.js et npm sur votre machine.",
+            "duration": "15 minutes",
+            "status": "à faire",
+            "notes": "Vérifier la version de Node.js avec node -v."
+          },
+          {
+            "step": "Initialiser un nouveau projet Node.js avec npm init.",
+            "duration": "10 minutes",
+            "status": "à faire",
+            "notes": "Suivre les instructions de l'invite pour initialiser le projet."
+          },
+          {
+            "step": "Installer Express via npm et créer un fichier server.js.",
+            "duration": "20 minutes",
+            "status": "à faire",
+            "notes": "Utiliser npm install express pour ajouter Express au projet."
+          },
+          {
+            "step": "Configurer un routeur de base dans server.js pour répondre aux requêtes HTTP.",
+            "duration": "30 minutes",
+            "status": "à faire",
+            "notes": "Créer des routes GET et POST comme exemples."
+          },
+          {
+            "step": "Démarrer le serveur et tester avec un navigateur ou un client HTTP comme Postman.",
+            "duration": "15 minutes",
+            "status": "à faire",
+            "notes": "Utiliser node server.js pour démarrer le serveur."
+          }
+        ]
+      }
+    ]
+  }
+  

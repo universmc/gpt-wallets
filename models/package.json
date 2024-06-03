@@ -1,0 +1,35 @@
+{
+    "name": "seo",
+    "version": "1.0.0",
+    "description": "#hashage, #genAi-V0-2-3, #role #context, #proc, #chart, #gantt-chart #ia #ml, #rdfLIB, #nlp, #glcloud ml vertex #billing #gpt-wallet",
+    "main": "main.js",
+    "directories": {
+      "doc": "docs"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "electron .",
+      "call": "electron phone.js",
+      "devOps": "electron desk.js",
+      "saas": "sass --watch src/sass/devOps.scss src/css/windows.css",
+      "observer": "sass --watch src/sass/windows.scss src/css/style1/playeur.css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "GNU",
+    "dependencies": {
+      "@electron-forge/plugin-webpack": "^7.3.0",
+      "@tensorflow/tfjs": "^4.17.0",
+      "@tensorflow/tfjs-node": "^4.17.0",
+      "bootstrap": "^5.3.3",
+      "electron-forge": "^5.2.4",
+      "electron-router": "^0.5.1",
+      "groq": "^3.32.0",
+      "node-emoji": "^2.1.3",
+      "node-fetch": "^3.3.2"
+    },
+    "devDependencies": {
+      "electron": "^29.1.1"
+    }
+  }
+  

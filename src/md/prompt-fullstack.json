@@ -1,0 +1,22 @@
+[
+    {
+        "num\u00e9ro": 1,
+        "titre": "Cr\u00e9ation d'une API RESTful avec Node.js et Express",
+        "instruction": "G\u00e9n\u00e9rer un script pour une API RESTful en Node.js utilisant Express, incluant des routes CRUD pour une ressource utilisateur."
+    },
+    {
+        "num\u00e9ro": 2,
+        "titre": "D\u00e9veloppement Frontend avec React",
+        "instruction": "Cr\u00e9er un composant React pour un formulaire de connexion, incluant la validation des champs avec des expressions r\u00e9guli\u00e8res."
+    },
+    {
+        "num\u00e9ro": 3,
+        "titre": "Automatisation des Tests avec Jest",
+        "instruction": "\u00c9crire un script de test en Jest pour une application React, v\u00e9rifiant que les entr\u00e9es du formulaire respectent un format sp\u00e9cifique."
+    },
+    {
+        "num\u00e9ro": 4,
+        "titre": "Int\u00e9gration d'une Base de Donn\u00e9es MongoDB",
+        "instruction": "Construire un script de connexion \u00e0 MongoDB dans une application Node.js, avec gestion d'erreurs."
+    }
+]

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte de campagne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="messages"></div>
+
+    <table>
+        <thead>
+        <tr>
+        <th>Item</th>
+        <th>Type</th>
+        <th>Montant</th>
+        <th>Classe de compte</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Dépenses -->
+        <tr>
+        <td>{nom_depense}</td>
+        <td>Dépense</td>
+        <td>{montant_depense}</td>
+        <td>{classe_compte_depense}</td>
+        </tr>
+        <!-- Recettes -->
+        <tr>
+        <td>{nom_recette}</td>
+        <td>Recette</td>
+        <td>{montant_recette}</td>
+        <td>{classe_compte_recette}</td>
+        </tr>
+        <!-- Total -->
+        <tr>
+        <td><b>Total dépenses</b></td>
+        <td></td>
+        <td><b>{total_depenses}</b></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td><b>Total recettes</b></td>
+        <td></td>
+        <td><b>{total_recettes}</b></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td><b>Résultat net</b></td>
+        <td></td>
+        <td><b>{resultat_net}</b></td>
+        <td></td>
+        </tr>
+        </tbody>
+</table>
+        <script src="script.js"></script>
+</body>
+</html>

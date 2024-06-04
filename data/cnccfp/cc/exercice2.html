@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte de campagne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="messages"></div>
+    <table>
+        <thead>
+        <tr>
+        <th>Item</th>
+        <th>Type</th>
+        <th>Montant</th>
+        <th>Classe de compte</th>
+        <th>Modèle de compte</th>
+        <th class="hashtag">#</th>
+        <th class="emoji"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- ... -->
+        <!-- Dépenses -->
+        <tr>
+        <td>{nom_depense}</td>
+        <td>Dépense</td>
+        <td>{montant_depense}</td>
+        <td>{classe_compte_depense}</td>
+        <td></td>
+        <td class="hashtag">#D{id_depense}</td>
+        <td class="emoji">💸</td>
+        </tr>
+        <!-- ... -->
+        </tbody>
+        </table>
+        
+
+        <script src="script.js"></script>
+</body>
+</html>

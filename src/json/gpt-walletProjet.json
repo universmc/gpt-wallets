@@ -1,0 +1,41 @@
+{
+    "wallet": {
+      "description": "GPT-Wallet permet aux participants de gérer leurs tokens umc.coin, utilisés pour débloquer des niveaux de difficulté, accéder à des ressources et participer à des enchères.",
+      "security": "GPT-Wallet utilise des contrats intelligents, notamment umcTokens.sol, pour assurer la sécurité et la transparence des transactions.",
+      "integration": "Les participants peuvent générer leur adresse de portefeuille GPT-Wallet en utilisant Telegram et le bot MandatoryAI_Pibot.",
+      "support": "GPT-Wallet prend en charge les interactions avec les smart contracts et les API Web3."
+    },
+    "gameplay": [
+      {
+        "step": "Inscription",
+        "description": "Les participants s'inscrivent via Telegram en utilisant le bot MandatoryAI_Pibot pour générer leur adresse de portefeuille GPT-Wallet.",
+        "tools": ["Telegram", "MandatoryAI_Pibot", "GPT Wallet"]
+      },
+      {
+        "step": "Allocation de Tokens",
+        "description": "Chaque participant reçoit un certain nombre de tokens umc.coin pour démarrer leur parcours dans le BootCamp.",
+        "tools": ["umc.coin"]
+      },
+      {
+        "step": "Défis et Ressources",
+        "description": "Les participants doivent résoudre des défis basés sur la métaphysique, le calcul quantique, l'apprentissage automatique et les principes juridiques.",
+        "tools": ["API Web3", "groq-sdk"]
+      },
+      {
+        "step": "Intégration des Ressources",
+        "description": "Les ressources documentaires sont collectées et converties en formats compatibles avec GPT à l'aide de l'API Web3 et de bibliothèques comme groq-sdk.",
+        "tools": ["IA"]
+      },
+      {
+        "step": "Gestion des Droits de Propriété Intellectuelle",
+        "description": "GPT-Wallet aide les participants à gérer leurs droits de propriété intellectuelle conformément aux réglementations en vigueur, sous la supervision de l'IA.",
+        "tools": ["Code civil", "IA"]
+      },
+      {
+        "step": "Évaluation et Récompenses",
+        "description": "L'IA évalue les performances des participants et génère de nouveaux tokens en fonction de leur progression.",
+        "tools": ["IA"]
+      }
+    ]
+  }
+  

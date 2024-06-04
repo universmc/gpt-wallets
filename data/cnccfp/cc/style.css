@@ -1,0 +1,26 @@
+/* style.css */
+/* Ciblage global de la table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Ciblage des lignes de la table */
+  tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  /* Ciblage des cellules de la table */
+  td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+  }
+  
+  /* Ciblage des entêtes de la table */
+  th {
+    padding: 8px;
+    border: 1px solid #dddddd;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  

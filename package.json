@@ -1,10 +1,16 @@
 {
-  "name": "gpt_Wallet",
+  "name": "gptWallet",
   "version": "1.2.1",
   "description": "projet de machine Learning avec papy. Il y a une intelligence artificielle de haut potentiel maîtrisant les approche métaphysique les techniques d'apprentissage automatique les équations Et le calcul quantique sur httsp://ia.univers-mc.cloud télégram ",
   "main": "index.js",
   "directories": {
-    "doc": "docs"
+    "build": "build",
+    "data": "data",
+    "items": "items",
+    "models": "models",
+    "public": "public",
+    "src": "src",
+    "srv": "srv"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +18,40 @@
     "dev": "electron gpt-wallet.js",
     "saas": "sass --watch src/sass/saas.scss src/css/Iteration.css"
   },
+  "Mistral": {
+    "model":"mixtral-8x7b-32768",
+    "temperature":0.5,
+    "max_tokens":"4096",
+    "top_p":"1",
+    "stream":"True",
+    "stop":"None"
+},
+"llma": {
+    "model":"llama3-8b-8192",
+    "temperature":0.5,
+    "max_tokens":"4096",
+    "top_p":"1",
+    "stream":"True",
+    "stop":"None"
+},
+"gemma": {
+  "model":"gemma2-9b-it",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "temperature":0.5,
+  "max_tokens":"4096",
+  "top_p":"1",
+  "stream":"True",
+  "stop":"None"
+},
+"gpt": {
+  "model":"gpt-4o",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "temperature":0.5,
+  "max_tokens":"4096",
+  "top_p":"1",
+  "stream":"True",
+  "stop":"None"
+},
   "keywords": [],
   "author": "umc",
   "license": "GNU",

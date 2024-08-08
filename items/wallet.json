@@ -1,0 +1,42 @@
+{
+    "gpt-wallet": {
+    "userId": "Identifiant unique de l'utilisateur",
+    "password": "Mot de passe",
+    "personalInfo": {
+    "name": "Nom de l'utilisateur",
+    "nationality": "Nationalité",
+    "dateOfBirth": "Date de naissance"
+    },
+    "professionalCv": {
+    "cv": {
+    "workExperience": ["Expérience professionnelle"],
+    "education": ["Éducation"],
+    "skills": ["Compétences"]
+    }
+    },
+    "documents": {
+        "NIIS": "Identité numérique sécurisé",
+        "smartContract": {
+            "name": "umcToken.sol",
+            "type": "ERC20",
+            "address": "src/sol/smartContract.sol"
+        },
+        "CB": {
+        "cardNumber": "Numéro de carte",
+        "expirationDate": "Date d'expiration",
+        "CVN": "user-cv"
+        },
+        "RIB": {
+            "Informations" : "RIB"
+        }
+        },
+    "crypto": {
+    "cryptoCurrency": {
+    "name": "unité monétisable capacitente",
+    "symbol": "UMC",
+    "balance": "Solde en crypto-monnaie"
+    }
+    }
+    }
+    }
+    

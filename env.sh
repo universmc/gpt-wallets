@@ -1,4 +1,3 @@
-universmc@Airdeuniversmc ~ % cat .zsh_config/menu.sh 
 # Affichage de l'heure et du mode de développement
 export source api-key = proj_org-aPi-sk91863tHEADER01010.087PAYLOAD.0010101ASIGN.hashtag.qrcode
 # Définition des variables utilisées dans le script:

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art Video</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        let renderer, scene, camera;
+        let asciiArt = `
+           ____  
+          / ___|   ___  ___  _ __   
+         | |      / _ \\ / _ \\| '_ \\ 
+         | |___  |  __/|  __/| | | |
+          \\____|  \\___| \\___|_| |_|
+        `;
+
+        function init() {
+            // Create a scene
+            scene = new THREE.Scene();
+
+            // Create a camera
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 5;
+
+            // Create a renderer
+            renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            // Convert ASCII art to a texture
+            let canvas = document.createElement('canvas');
+            let ctx = canvas.getContext('2d');
+            canvas.width = 512;
+            canvas.height = 512;
+            ctx.font = '20px monospace';
+            let lines = asciiArt.split('\n');
+            for (let i = 0; i < lines.length; i++) {
+                ctx.fillText(lines[i], 0, 30 + i * 30);
+            }
+            let texture = new THREE.CanvasTexture(canvas);
+
+            // Create a plane and apply the texture to it
+            let geometry = new THREE.PlaneGeometry(3, 3);
+            let material = new THREE.MeshBasicMaterial({ map: texture });
+            let plane = new THREE.Mesh(geometry, material);
+            scene.add(plane);
+
+            // Start the animation
+            animate();
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // You can add some rotation to make it more dynamic
+            scene.children[0].rotation.x += 0.01;
+            scene.children[0].rotation.y += 0.01;
+
+            renderer.render(scene, camera);
+        }
+
+        init();
+    </script>
+</body>
+</html>

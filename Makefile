@@ -3,6 +3,49 @@ NODE_ENV = development
 NODE_PORT = 5144
 NODE_APP = index.js
 
+# Définir la commande par défaut (si aucune commande n'est spécifiée)
+.DEFAULT_GOAL := help
+
+# Définir les variables
+NAME = "mon_projet"
+NODE_PATH = "node_modules/.bin"
+# Afficher la liste des commandes disponibles
+
+update:
+	@echo "✨ Mise en état du dossier sur github✨"
+	@git add .
+	@git commit -m "test"
+	@git push
+	@echo "✨ Mise à jour terminée✨"
+
+help:
+	@echo "Les commandes disponibles sont :"
+	@echo "    install -     Installer les dépendances Node.js"
+	@echo "    test -        Lancer les tests unitaires"
+	@echo "    lint -        Vérifier la qualité du code"
+	@echo "    build -       Générer le projet"
+	@echo "    start -       Démarrer le serveur de développement"
+	@echo "    deploy -      Déployer le projet en production"
+# Installer les dépendances Node.js
+install:
+	@npm install
+
+# Lancer les tests unitaires
+test:
+	@$(NODE_PATH)/mocha
+
+# Vérifier la qualité du code
+lint:
+	@$(NODE_PATH)/eslint .
+
+# Générer le projet
+build:
+	@npm run build
+# Démarrer le serveur de développement
+deploy:
+	@npm run deploy
+
+
 menu :
 	@echo "Welcom To Quantum Univere."
 	@echo""

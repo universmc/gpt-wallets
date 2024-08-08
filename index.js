@@ -5,8 +5,8 @@ const path = require('path');
 app.on('ready', () => {
   // Crée une nouvelle fenêtre
 const mainWindow = new BrowserWindow({
-    width: 340,
-    height: 610,
+    width: 460,
+    height: 320,
     webPreferences: {
       nodeIntegration: false,
       enableRemoteModule: false,

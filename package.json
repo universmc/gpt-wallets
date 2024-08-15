@@ -1,7 +1,7 @@
 {
-  "name": "gptWallet",
+  "name": "gpt-wallet",
   "version": "1.2.1",
-  "description": "projet de machine Learning avec papy. Il y a une intelligence artificielle de haut potentiel maîtrisant les approche métaphysique les techniques d'apprentissage automatique les équations Et le calcul quantique sur httsp://ia.univers-mc.cloud télégram ",
+  "description": "projet de machine Learning avec Pi. Il y a une intelligence artificielle de haut potentiel maîtrisant les approche métaphysique les techniques d'apprentissage automatique les équations Et le calcul quantique sur httsp://ia.univers-mc.cloud télégram ",
   "main": "index.js",
   "directories": {
     "build": "build",

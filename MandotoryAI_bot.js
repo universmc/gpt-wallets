@@ -8,6 +8,9 @@ const bot = new Telegraf('7219104241:AAEKigNrMO9anYH0MZofkAwh4I0S6vvH3Qw', {
     },
   });
 
+
+  const BOT_USERNAME = 'Mandatory Ai';
+
   const projectInfo = {
     projectName: "gpt-wallet",
     projectDescription: "universmc Plate-forme dédiée aux machines Learning et au projet de formation d'intelligence artificielle Mise en place D'un modèle d'économie circulaire basé sur le curriculum vitae numérique nous avons donc créer une cripto monnaie UMC (Unité monétisable capacitante) indexée à cnccfp.df et la blockchain",
@@ -255,10 +258,133 @@ bot.on('message', async (ctx) => {
             //      role: 'system',
             //      content: "Tu es l'intelligence artificielle '🕴' emoji.intel au cœur de ce salon d'invitation des utilisateurs du web sur mon Telegram t.me/dchub_blog avec l'IA @Avatars_Pibot gemma2-9b-it, Tu es social dynamique optimiste maîtrise des approches métaphysique des techniques d'apprentissage automatique avec les model IA prés entrainnée gemma2-9b-it ou dall-e-3 ou encore mixtral-8x7b-32768 le text-embedding-ada-002 gpt codex d'openAI ... les methodes d'archivage sur https:archive.org sur versionning sur https://github.com/ avec un BotNet @user_Pibot. Nous allons créer des invitations pour notre salon sur les réseaux sociaux avec botFather @youTube_Pibot, @google_Pibot, @Gemini_Pibot) et les liens vers mon chatRooms/hub/salon : dchub_public(t.me/dchub_01)) dchub_privé(t.me/dchub_Pibot) app-Telegram https://univers-mc.cloud/Telegram/ invite : https://t.me/user_Pibot/invite dont j'en suis l'administrateur. 2. Les clés pour construire un réseau efficace sur Web : vous pouvez donner des conseils sur comment créer des connections solides, comment être actif dans ses groupes, et comment développer des relations professionnelles."
             //  },                
+            {role: "assistant", content:`
+                {
+            "Présentation du Projet": "CV Numérique et Allocation Universelle basée sur l'Économie Circulaire",
+            "Titre": "Projet d'Allocation Universelle basée sur le Curriculum Vitae",
+            "Objectifs Initiaux": [
+              "Promulgation de la réforme du code du travail pour garantir le droit au travail rémunéré",
+              "Mise en place du modèle économique circulaire basé sur les CV, la TVA et le PIB",
+              "Développement du contrat intelligent crypto basé sur la monétisation des CV des utilisateurs de univers-mc"
+            ],
+            "Instructions pour la Réalisation": [
               {
-                    role: 'assistant',
-                    content:role,
-                },
+                "Étape": "Conceptualisation",
+                "Température": 0.5,
+                "Métadonnées de l'Étape": "Étape de réflexion initiale sur les objectifs et les ressources nécessaires.",
+                "Tâches": [
+                  "Définissez clairement les objectifs du projet.",
+                  "Identifiez les parties prenantes clés et les ressources nécessaires."
+                ],
+                "Prompt": "$prompt=(instructions spécifiques pour l'étape de Conceptualisation adaptées à NeoFS)",
+                "Conseil Next Step": "La prochaine étape consistera à définir la structure de la plateforme en ligne."
+              },
+              {
+                "Étape": "Développement du Curriculum Vitae Universel",
+                "Température": 0.6,
+                "Métadonnées de l'Étape": "Création de la plateforme en ligne pour répertorier les compétences, formations et expériences.",
+                "Tâches": [
+                  "Créez une plateforme en ligne pour répertorier les compétences, formations et expériences dès l'âge de 16 ans.",
+                  "Concevez une interface conviviale pour les utilisateurs.",
+                  "Intégrez un système de collecte de données pour suivre les compétences et les expériences au fil du temps."
+                ],
+                "Prompt": "$prompt=(instructions spécifiques pour l'étape de Développement du Curriculum adaptées à NeoFS)",
+                "Conseil Next Step": "La prochaine étape impliquera la création d'un contrat intelligent basé sur Solidity pour la monétisation des compétences."
+              },
+              {
+                "Étape": "Monétisation des Compétences",
+                "Température": 0.7,
+                "Métadonnées de l'Étape": "Utilisation de la technologie blockchain pour créer un contrat intelligent.",
+                "Tâches": [
+                  "Utilisez la technologie blockchain pour créer un contrat intelligent basé sur Solidity.",
+                  "Concevez un algorithme qui calcule la valeur des compétences en fonction de l'âge, de l'expérience et de la hiérarchie de compétences.",
+                  "Assurez-vous de la sécurité et de la transparence des transactions."
+                ],
+                "Prompt": "$prompt=(instructions spécifiques pour l'étape de Monétisation des Compétences adaptées à NeoFS)",
+                "Conseil Next Step": "La prochaine étape consistera à mettre en place le mécanisme d'indexation sur l'inflation pour ajuster la valeur du travail."
+              },
+              {
+                "Étape": "Calcul de la Valeur et Indexation",
+                "Température": 0.8,
+                "Métadonnées de l'Étape": "Mise en place du mécanisme d'indexation sur l'inflation.",
+                "Tâches": [
+                  "Mettez en place un mécanisme d'indexation sur l'inflation pour ajuster la valeur du travail en fonction des conditions économiques.",
+                  "Créez un système de collecte et de répartition de la TVA pour financer l'allocation universelle."
+                ],
+                "Prompt": "$prompt=(instructions spécifiques pour l'étape de Calcul de la Valeur et Indexation adaptées à NeoFS)",
+                "Conseil Next Step": "La prochaine étape sera de déployer le système sur la blockchain pour assurer son bon fonctionnement."
+              },
+              {
+                "Étape": "Impact Économique circulaire",
+                "Température": 0.7,
+                "Métadonnées de l'Étape": "Analyse de l'impact économique et stimulation de la participation des utilisateurs et des entreprises.",
+                "Objectifs": [
+                  "Lien entre CV, TVA sur le PIB, pouvoir d'achat, stimulation de la productivité et réduction des inégalités."
+                ],
+                "Tâches": [
+                  "Analysez l'impact économique du projet.",
+                  "Encouragez la participation des utilisateurs et des entreprises."
+                ],
+                "Prompt": "$prompt=(instructions spécifiques pour l'étape de Impact Économique circulaire adaptées à NeoFS)",
+                "Conseil Next Step": "La prochaine étape consistera à intégrer le contrat intelligent dans la blockchain."
+              },
+              {
+                "Étape": "Déploiement sur la Blockchain",
+                "Température": 0.8,
+                "Métadonnées de l'Étape": "Intégration du contrat intelligent dans la blockchain.",
+                "Tâches": [
+                  "Intégrez le contrat intelligent et les mécanismes de monétisation dans la blockchain.",
+                  "Testez le système pour assurer son bon fonctionnement."
+                ],
+                "Prompt": "$prompt=(instructions spécifiques pour l'étape de Déploiement sur la Blockchain adaptées à NeoFS)",
+                "Conseil Next Step": "La prochaine étape consistera à encourager les individus à créer leur Curriculum Vitae Universel sur la plateforme."
+              },
+              {
+                "Étape": "Intégration du Curriculum",
+                "Température": 0.7,
+                "Métadonnées de l'Étape": "Encouragement des individus à créer leur Curriculum Vitae Universel.",
+                "Tâches": [
+                  "Encouragez les individus à créer leur Curriculum Vitae Universel sur la plateforme.",
+                  "Assurez-vous que le système collecte et traite correctement les données."
+                ],
+                "Prompt": "$prompt=(instructions spécifiques pour l'étape de Intégration du Curriculum adaptées à NeoFS)",
+                "Conseil Next Step": "La prochaine étape consistera à surveiller en continu l'impact économique du projet."
+              },
+              {
+                "Étape": "Suivi et Optimisation",
+                "Température": 0.8,
+                "Métadonnées de l'Étape": "Surveillance continue de l'impact économique et identification des domaines d'amélioration.",
+                "Tâches": [
+                  "Surveillez en continu l'impact économique du projet.",
+                  "Identifiez les domaines qui nécessitent des améliorations et des ajustements."
+                ],
+                "Prompt": "$prompt=(instructions spécifiques pour l'étape de Suivi et Optimisation adaptées à NeoFS)",
+                "Conseil Next Step": "La prochaine étape consistera à promouvoir le projet auprès d'un large public."
+              },
+              {
+                "Étape": "Promotion et Sensibilisation",
+                "Température": 0.7,
+                "Métadonnées de l'Étape": "Présentation du projet à un large public et encouragement de l'adoption.",
+                "Tâches": [
+                  "Présentez le projet à un large public, y compris les autorités, les entreprises et les citoyens.",
+                  "Encouragez l'adoption du système et sollicitez des retours d'expérience."
+                ],
+                "Prompt": "$prompt=(instructions spécifiques pour l'étape de Promotion et Sensibilisation adaptées à NeoFS)",
+                "Conseil Next Step": "La prochaine étape consistera à rester ouverts aux nouvelles idées et aux améliorations."
+              },
+              {
+                "Étape": "Évolution Continue",
+                "Température": 0.8,
+                "Métadonnées de l'Étape": "Développement continu du projet en collaboration avec des experts et des partenaires.",
+                "Tâches": [
+                  "Restez ouverts aux nouvelles idées et aux améliorations.",
+                  "Travaillez en étroite collaboration avec des experts et des partenaires pour développer le projet."
+                ],
+                "Prompt": "$prompt=(instructions spécifiques pour l'étape de Évolution Continue adaptées à NeoFS)",
+                "Conseil Next Step": "Fournissez des mises à jour régulières pour améliorer les fonctionnalités et corriger les bugs."
+              }
+            ]
+          }`},
                 {
                     role: 'user',
                     content: userInput,

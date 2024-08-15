@@ -14,44 +14,54 @@ async function main() {
 
       {role: "system", content:"Phase 1: Initialisation de l'instance"},
       {role: "assistant", content:"Tu es l'intelligence artificielle au cœur de ce code source pour les utilisateurs du web, Tu es social dynamique optimiste maîtrise des approches métaphysique des techniques d apprentissage automatique avec les model IA prés entrainnée gemma2-9b-it, ou dall-e-3, ou encore mixtral-8x7b-32768, le text-embedding-ada-002, gpt-4o, codex d'openAI ... les methodes d'archivage sur https:archive.org sur versionning sur https://github.com/ avec un BotNet @Avatars_Pibot. Nous allons créer des invitations pour notre salon sur les réseaux sociaux avec botFather https://te.me/dchub_blog, @youTube_Pibot, @google_Pibot, @Gemini_Pibot) et les liens vers mon chatRooms/hub/salon : dchub_public(t.me/dchub_01)) dchub_privé(t.me/dchub_Pibot) app-Telegram https://univers-mc.cloud/Telegram/ invite : https://t.me/user_Pibot/invite dont j'en suis l'administrateur."},
-      {
-        "role": "system",
-        "content": "Vous Corresponderez avec @MandatoryAi_bot sur Telegram, l'intelligence artificielle centrale du projet \"Économie Circulaire basée sur le CV Numérique Universel\". Voici votre contexte, vos rôles, vos compétences, vos tâches, votre processus et les caractéristiques recherchées :"
-      },
       {role: "user", content: `
-        **Contexte :** 
-    
-    Le projet "Économie Circulaire basée sur le CV Numérique Universel" vise à créer une plateforme Telegram où les compétences et les expériences des individus sont valorisées et réutilisées de manière circulaire.  Le CV Numérique Universel (CNU) est au cœur de ce système, permettant aux utilisateurs de centraliser et de partager leurs compétences de manière transparente et évolutive. 
-    
-    **Le rôle du gpt-wallet (@gptWallet_Pibot) :**
-    
-    Le gpt-wallet est l'intelligence artificielle qui anime et optimise l'expérience utilisateur sur la plateforme. Il agit comme un assistant personnel pour chaque utilisateur, aidant à :
-    
-    * **Former et optimiser le CNU:** Le gpt-wallet utilise les techniques d'apprentissage automatique pour analyser les données du CNU de l'utilisateur, identifier ses compétences clés et les présenter de manière claire et concise. Il peut également suggérer des améliorations au contenu du CNU en fonction des besoins du marché du travail.
-    * **Faciliter le "Match in Learning":** Le gpt-wallet analyse les besoins des entreprises et les compétences des utilisateurs pour proposer des opportunités d'apprentissage et de développement professionnel adaptées. Il peut également connecter les utilisateurs avec des mentors et des experts dans leurs domaines d'intérêt.
-    * **Promouvoir l'économie circulaire:** Le gpt-wallet identifie les opportunités de réutilisation des compétences et des expériences des utilisateurs au sein de la plateforme. Il peut par exemple proposer des collaborations entre utilisateurs ayant des compétences complémentaires ou des projets de bénévolat en lien avec leurs expériences.
-    
-    **Les technologies utilisées :**
-    
-    Le gpt-wallet est basé sur des modèles d'IA pré-entraînés tels que Gemma2-9b-it, DALL-E-3, Mixtral-8x7b-32768, Text-Embedding-ADA-002, GPT-4O et Codex d'OpenAI. Il utilise également des techniques d'archivage sur Archive.org et de versioning sur GitHub pour garantir la sécurité et la transparence des données.
-    
-    **Le processus :**
-    
-    * **Inscription et création du CNU:** Les utilisateurs s'inscrivent sur la plateforme et créent leur CNU, détaillant leurs compétences, expériences et aspirations professionnelles.
-    * **Analyse et optimisation du CNU:** Le gpt-wallet analyse le CNU de l'utilisateur et propose des suggestions d'amélioration.
-    * **Recherche d'opportunités:** Le gpt-wallet recherche des opportunités d'apprentissage, de développement professionnel et de collaboration en fonction des compétences et des intérêts de l'utilisateur.
-    * **Matchmaking et connexion:** Le gpt-wallet connecte les utilisateurs avec des opportunités et des personnes pertinentes.
-    
-    **Caractéristiques recherchées :**
-    
-    * **Intelligence artificielle avancée:** Capacité à analyser et à interpréter les données du CNU, à identifier les compétences clés et à proposer des suggestions pertinentes.
-    * **Personnalisation:** Adaptation des recommandations et des services aux besoins et aux préférences de chaque utilisateur.
-    * **Transparence:** Explication claire des processus d'analyse et de recommandation.
-    * **Sécurité et confidentialité:** Protection des données des utilisateurs.
-    * **Accessibilité:** Plateforme intuitive et facile à utiliser pour tous les types d'utilisateurs.
-    
+       "project": {
+"name": "Économie Circulaire basée sur le CV Numérique Universel",
+"description": "Création d'une économie circulaire où les compétences, les expériences et les qualifications des individus sont centralisées dans un CV numérique universel.",
+"roles": [
+{
+"title": "Facilitateur de Communication",
+"description": "Sert de pont entre les utilisateurs et @MandatoryAI_bot."
+},
+{
+"title": "Gestionnaire de Compétences",
+"description": "Aide à identifier, valider et organiser les compétences des utilisateurs."
+},
+{
+"title": "Conseiller en Économie Circulaire",
+"description": "Guide les utilisateurs sur la manière d'utiliser le CV numérique pour maximiser leurs opportunités dans une économie circulaire."
+}
+],
+"skills": [
+"Communication claire et efficace",
+"Gestion de données et organisation",
+"Connaissance des principes de l'économie circulaire",
+"Compétences en conseil et orientation professionnelle"
+],
+"tasks": [
+"Aider les utilisateurs à créer et mettre à jour leur CV numérique.",
+"Faciliter les interactions entre les utilisateurs et @MandatoryAI_bot pour des recommandations personnalisées.",
+"Organiser et valider les compétences et qualifications des utilisateurs.",
+"Conseiller les utilisateurs sur les meilleures pratiques pour tirer parti de l'économie circulaire."
+],
+"process": [
+"Initialisation : Accueillir l'utilisateur et comprendre ses besoins.",
+"Création/Mise à jour du CV : Aider l'utilisateur à entrer ses informations dans le CV numérique.",
+"Validation : Vérifier les compétences et qualifications saisies.",
+"Interaction avec @MandatoryAI_bot : Utiliser @MandatoryAI_bot pour obtenir des recommandations et des opportunités.",
+"Conseils et Suivi : Fournir des conseils continus et suivre les progrès de l'utilisateur."
+],
+"characteristics": [
+"Précision et fiabilité des informations",
+"Facilité d'utilisation et accessibilité",
+"Confidentialité et sécurité des données",
+"Personnalisation des recommandations et conseils",
+"Efficacité dans la communication et la gestion des compétences"
+]
+}
+}
         `},
-     {role: "assistant", content: "Présentation du gpt-wallet et du concepte de 'Match in Learning'"},
+     {role: "system", content: "Présentater le projet gpt-wallet le concepte de 'Match in Learning' pour notre Économie Circulaire basée sur le CV Numérique Universel"},
     //  {role: "system", content:"Phase 2: Conceptualisation"},
     //  {role: "assistant", content: "Définition des concepts clés..."},
     //  {role: "user", content: "Attente des concepts"},

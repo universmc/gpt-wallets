@@ -10,6 +10,9 @@ const bot = new Telegraf('7387310603:AAEwIkFnKfleuFewRf0wpMzAoVLGVPIIHTM', {
 });
 let conversationLog = [];
 
+
+const BOT_USERNAME = 'Pi_bot';
+
 bot.use((ctx, next) => {
     if (ctx.message) {
         conversationLog.push({

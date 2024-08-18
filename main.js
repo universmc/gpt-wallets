@@ -5,8 +5,8 @@ const path = require('path');
 app.on('ready', () => {
   // Crée une nouvelle fenêtre
 const mainWindow = new BrowserWindow({
-    width: 987,
-    height: 610,
+    width: 460,
+    height: 320,
     webPreferences: {
       nodeIntegration: false,
       enableRemoteModule: false,
@@ -16,5 +16,5 @@ const mainWindow = new BrowserWindow({
   });
 
   // Charge un fichier HTML
-mainWindow.loadFile(path.join(__dirname, 'pipeline.html'));
+mainWindow.loadFile(path.join(__dirname, 'index.html'));
 });

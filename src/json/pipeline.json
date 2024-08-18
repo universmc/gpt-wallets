@@ -1,14 +1,18 @@
 [       
     {
-    "titre": "Fullstack Development",
+    "titre": "GPT-WALLET Présentation",
     "sousSections": [
         {
             "sousTitre": "Introduction",
             "contenu": "Présentation de l'agent IA le développement WEV."
         },
         {
-            "sousTitre": "FullStack",
-            "contenuMarkdown": "src/md/cours-fullstack.md"
+            "sousTitre": "dev",
+            "contenuMarkdown": "src/md/intro.md"
+        },
+        {
+            "sousTitre": "MVP",
+            "contenuMarkdown": "src/md/MVP.md"
         }
     ]
     },

@@ -1,56 +1,112 @@
-# Define variables
-NODE_ENV = development
-NODE_PORT = 5144
-NODE_APP = index.js
+SHELL := /bin/bash
 
-# Définir la commande par défaut (si aucune commande n'est spécifiée)
-.DEFAULT_GOAL := help
+COMMANDE1_MSG="✨ initialisation du serveur Telegram ✨"
+COMMANDE2_MSG="✨ Connection Pi-Quantum ✨ "
+COMMANDE3_MSG="✨ brainstorming generation d idées ✨"
+COMMANDE4_MSG="✨ Initialisation du chatbot✨"
+COMMANDE5_MSG="✨ Initialisation du Prompt Model"
+COMMANDE6_MSG="🏗 Factory Generate Howto 📜 ✨"
+COMMANDE7_MSG="🏗 Factory Start Building composant 📦 ✨"
+COMMANDE8_MSG="🏗 Factory running Compose page 📦 ✨"
+COMMANDE9_MSG="✨ Mise à jour du repertoire sur github✨"
+COMMANDEU_MSG="✨ Mise à jour du repertoire sur github✨"
+COMMANDE10_MSG="✨Exit session✨"
+COMMANDEa_MSG="✨Test F2✨"
+COMMANDEa_MSG="✨Test F2✨"
 
-# Définir les variables
-NAME = "mon_projet"
-NODE_PATH = "node_modules/.bin"
-# Afficher la liste des commandes disponibles
+# Ajoutez une règle pour chaque commande
 
-update:
-	@echo "✨ Mise en état du dossier sur github✨"
+commande1:
+	@echo "${COMMANDE2_MSG}"
+	@ssh universmc@192.168.1.33
+commande2:
+	@echo "${COMMANDE2_MSG}"
+	@./Pibot.sh
+
+
+commande3:
+	@echo "${COMMANDE3_MSG}"
+	@node .setup/did.js
+
+commande4:
+	@echo "${COMMANDE4_MSG}"
+	@node .setup/chatCompletion.js
+
+commande5:
+	@echo "${COMMANDE5_MSG}"
+	@node .setup/myprompt.js
+
+commande6:
+	@echo "${COMMANDE5_MSG}"
+	@node build/howto.js
+
+commande7:
+	@echo "${COMMANDE5_MSG}"
+	@node build/Composants.js
+
+commande8:
+	@echo "${COMMANDE5_MSG}"
+	@node src/app/composer.js
+
+commande9:
+	@echo "${COMMANDE9_MSG}"
 	@git add .
-	@git commit -m "test"
+	@git commit -m "Update"
 	@git push
 	@echo "✨ Mise à jour terminée✨"
+commande10:
+	@echo "${COMMANDE10_MSG}"
 
-help:
-	@echo "Les commandes disponibles sont :"
-	@echo "    install -     Installer les dépendances Node.js"
-	@echo "    test -        Lancer les tests unitaires"
-	@echo "    lint -        Vérifier la qualité du code"
-	@echo "    build -       Générer le projet"
-	@echo "    start -       Démarrer le serveur de développement"
-	@echo "    deploy -      Déployer le projet en production"
-# Installer les dépendances Node.js
-install:
-	@npm install
+commandeg:
+	@echo "${COMMANDE10_MSG}"
+	@npm run start
 
-# Lancer les tests unitaires
-test:
-	@$(NODE_PATH)/mocha
+commandeA:
+	@echo "${COMMANDEa_MSG}"
 
-# Vérifier la qualité du code
-lint:
-	@$(NODE_PATH)/eslint .
+commandeP:
+	@echo "${COMMANDEP_MSG}"
+	@node models/Pi-ia_bot.js
 
-# Générer le projet
-build:
-	@npm run build
-# Démarrer le serveur de développement
-deploy:
-	@npm run deploy
+commandeN:
+	@echo "${COMMANDEN_MSG}"
+	@node neofs/noeFs_Pibot.js
+
+
+commandeG:
+	@echo "${COMMANDEN_MSG}"
+	@node models/gemini/Gemini_Pibot.js
+
+commandeW:
+	@echo "${COMMANDEW_MSG}"
+	@node workspace/worker_Pibot.js
+
+commandeY:
+	@echo "${COMMANDEW_MSG}"
+	@node public/youtube_Pibot.js
+
+commandeU:
+	@echo "${COMMANDEU_MSG}"
+	@node user/user_Pibot.js
+
+
+commandeM:
+	@echo "${COMMANDEM_MSG}"
+	@node data/meta_Pibot.js
+
+tasks:
+	@node .setup/role.mjs showTasks
+
+# Tâche Make pour ajouter une tâche
+add-task:
+	@node ./role.mjs addTask $(task)
 
 
 menu :
-	@echo "Welcom To Quantum Univere."
+	@echo "Welcom To cycliq Economical system."
 	@echo""
 	@echo"╔═════════════════════════════════════╗     ╔═════════════════════════════════════════════════════════════════════╗"
-	@echo"╠═══════════ ✨ Pi Console ═══════════╣     ║  [💫] [💬] [📚] [🌌] [✨] [⚡️] [💰] [🌴] [📱] [📡]<            >[🛰]║"
+	@echo"╠═══════════ ✨ Pi Console ═══════════╣     ║  [💫] [💬] [📚] [🌌] [✨] [⚡️] [💰] [🌴] [📱] [📡]              [🛰]║"
 	@echo"║                                     ║     ╠═════════════════════════════════════════════════════════════════════╣"
 	@echo"║                                     ║     ║                                                                     ║"
 	@echo"║                                     ║     ║                                                                     ║"
@@ -79,62 +135,26 @@ menu :
 MAGIC_TARGETS := codex build rep file script clean
 
 all: $(MAGIC_TARGETS)
-# Magic COMPILER groq quantum
 
-gsrv:
-	@echo "Welcom To Telegram Univers Mc.ia."
-	@php -S localhost:5255
+srv : run start
 
-Telegram:
-	@echo "Welcom To Telegram Univers Mc.ia."
-	@./srv/Telegram/bin.sh
+start:
+	@npm start
+run:
+	@node ./srv/srv.js
 
 
-codex:
-	@echo "Quantum Universe reveal a story to be told"
-	@node data/welcom-umc.js
+update:
+	@echo "✨ Mise en état du dossier sur github✨"
+	@git add .
+	@git commit -m "test"
+	@git push
+	@echo "✨ Mise à jour terminée✨"
+S1:
+	@echo "✨ Mrun session brainstorming ✨"
+	@git add .
+	@git commit -m "sesssion brainstorm"
+	@git push
+	@echo "✨ Mise à jour terminée✨"
 
-build: buildHtml buildCss buildJS buildJson
-# Fabrication de la magie
-buildHtml:
-	@echo "Crafting web's fabric with quantum threads so bold"
-	@node models/worksJS-html.js
-
-buildCss:
-	@echo "Shaping beauty with qubits in every fold"
-	@node models/modelcss.js
-
-buildJS:
-	@echo "Weaving the logic with quantum entanglements we behold"@node javascript.js
-	@node "data/knowledge.js"
-
-buildJson:
-	@echo "Encoding knowledge in cosmic structures, truths to uphold"
-	@node src/wirefram.js
-rep:
-	@echo "Perceiving the quantum realm's Cosmic ia Consciencius World && vast landscape"
-	@vim -a build/build.sh &&
-	@vim -wq
-
-file:
-	@echo "Revealing hidden X11 dimensions, secrets to escape"
-	@bash src/sh/build.sh && 
-	@touch build/files.sh
-
-script:
-	@echo "Unleashing quantum Magic Mafile with every script we shape"
-	@bash src/sh/build.sh && 
-	@touch build/files.sh
-
-server:
-	@node srv/Telegram/server.js
-	@echo "Unleashing quantum Magic Mafile with every script we shape" 
-# Ouvrez-vous aux dimensions cachées
-clean-r:
-	@echo "Returning the quantum realm to pristine state"
-	@rm -rf data/* build/* src/* data/*
-
-clean-R:
-	@echo "Unweaving the fabric, a celestial fate"@rm -rf output/ build/ src/ data/
-
-clean: clean-r clean-R
+.PHONY: sh commande1 commande2 commande3 commande4 commande5

@@ -17,7 +17,7 @@ server.post('/generate', async (req, res) => {
     const response = await groq.chat.completions.create({
       model: 'gemma2-9b-it', // Utilisez le modèle correct disponible
       messages: [
-        { role: 'assistant', content: "welcom gpt-wallet" },
+        { role: 'assistant', content: "welcom gpt-wallet Modèle IA + Machine lerning(+tensorflow) d'économie circulaire basé sur une intelligence artificielle équipée d'un curriculum invité numérique universel comme exemple de régulation et d'optimisation de Pi.coin, umcToknes Et donc, modèle en constante évolution, augmentation progressive des compétences user-cv" },
         { role: 'user', content: prompt }
       ],
     });
@@ -31,8 +31,8 @@ server.post('/generate', async (req, res) => {
 });
 
 // Lancer le serveur Express
-server.listen(3777, () => {
-  console.log('Serveur Express démarré sur http://localhost:3777');
+server.listen(5144, () => {
+  console.log('Serveur Express démarré sur http://localhost:5144');
 });
 
 function createWindow() {

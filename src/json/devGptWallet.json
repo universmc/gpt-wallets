@@ -1,0 +1,97 @@
+{
+    "project": "gpt-wallet",
+    "description": "Interface d'intelligence artificielle axée sur l'économie circulaire basée sur le CV numérique universel.",
+    "objectives": [
+      "Développer un Curriculum Vitae Numérique basé sur la blockchain.",
+      "Créer un système d'allocation universelle valorisant les compétences des utilisateurs.",
+      "Promouvoir l'adoption du projet par le grand public et les organisations."
+    ],
+    "roles": [
+      {
+        "role": "Conceptualisation",
+        "tasks": [
+          "Définir les objectifs initiaux.",
+          "Identifier les parties prenantes.",
+          "Évaluer les ressources nécessaires."
+        ]
+      },
+      {
+        "role": "Développement du Curriculum Vitae Universel",
+        "tasks": [
+          "Concevoir une plateforme en ligne.",
+          "Implémenter des outils de gestion des compétences.",
+          "Assurer la sécurité des données et la conformité."
+        ]
+      },
+      {
+        "role": "Monétisation des Compétences",
+        "tasks": [
+          "Développer des contrats intelligents sur la blockchain.",
+          "Créer un système de calcul de la valeur des compétences.",
+          "Sécuriser les transactions des compétences."
+        ]
+      },
+      {
+        "role": "Calcul de la Valeur et Indexation",
+        "tasks": [
+          "Mettre en place des mécanismes pour ajuster la valeur des compétences.",
+          "Créer un index dynamique de compétences."
+        ]
+      },
+      {
+        "role": "Impact Économique Circulaire",
+        "tasks": [
+          "Analyser les résultats économiques.",
+          "Encourager la participation des utilisateurs."
+        ]
+      },
+      {
+        "role": "Déploiement sur la Blockchain",
+        "tasks": [
+          "Effectuer des tests et valider le système.",
+          "Déployer sur la blockchain et suivre les performances."
+        ]
+      },
+      {
+        "role": "Intégration du Curriculum",
+        "tasks": [
+          "Encourager la création et la mise à jour des CV.",
+          "Fournir des incitations pour la participation active."
+        ]
+      },
+      {
+        "role": "Suivi et Optimisation",
+        "tasks": [
+          "Surveiller et identifier les améliorations nécessaires.",
+          "Optimiser le système en fonction des feedbacks."
+        ]
+      },
+      {
+        "role": "Promotion et Sensibilisation",
+        "tasks": [
+          "Présenter le projet au grand public.",
+          "Créer des campagnes de promotion sur les réseaux sociaux et forums."
+        ]
+      },
+      {
+        "role": "Évolution Continue",
+        "tasks": [
+          "Maintenir le développement et les mises à jour régulières.",
+          "Collaborer avec des partenaires pour améliorer le projet."
+        ]
+      }
+    ],
+    "actions": {
+      "initialisation": "Définir les objectifs spécifiques et les tâches associées à chaque étape.",
+      "planification": "Structurer le plan de travail en fonction des priorités et des ressources disponibles.",
+      "communication": "Utiliser des canaux (Telegram, GitHub, etc.) pour coordonner les efforts et informer les parties prenantes.",
+      "suivi_et_evaluation": "Surveiller l'avancement et ajuster les stratégies si nécessaire."
+    },
+    "characteristics": [
+      "Maîtrise des technologies blockchain et des contrats intelligents.",
+      "Compétences en développement de plateforme et en gestion de données.",
+      "Capacité d'analyse économique et de suivi de projet.",
+      "Aptitudes en communication pour la promotion et la sensibilisation."
+    ]
+  }
+  

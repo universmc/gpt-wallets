@@ -1,0 +1,102 @@
+[
+    {
+        "titre": "GPT-WALLET",
+        "sousSections": [
+            {
+                "sousTitre": "Introduction Curriculum vitae, numérique, universel, modèle d'économie circuits",
+                "contenu": "Présentation de l'agent IA le développement WEV."
+            },
+            {
+                "sousTitre": "Compte Smart Comptra Crypto Money",
+                "contenuMarkdown": "src/md/intro.md"
+            },
+            {
+                "sousTitre": "Economie",
+                "contenuMarkdown": "src/md/intro.md"
+            },
+            {
+                "sousTitre": "Compte Pi.coin & user CV",
+                "contenuMarkdown": "src/md/MVP.md"
+            },
+            {
+                "sousTitre": "Banque RIB & CB",
+                "contenuMarkdown": "src/md/MVP.md"
+            },
+            {
+                "sousTitre": "Bilan pib/tva > user cv",
+                "contenuMarkdown": "src/md/MVP.md"
+            }
+        ]
+    },
+    {
+        "titre": "CV",
+        "sousSections": [
+            {
+                "sousTitre": "Identitée Numérique NIIS + valeur Travail en PI.coin de 500 à 5000",
+                "contenuMarkdown": "md/cours-devops.md"
+            },
+            {
+                "sousTitre": "QR-Code - signature",
+                "contenuMarkdown": "md/cours-devops.md"
+            },
+            {
+                "sousTitre": "Formation",
+                "contenu": "Bonnes pratiques pour le déploiement et la maintenance des applications du cv-user web."
+            },
+            {
+                "sousTitre": "Unité, Monéttisable & Capacitante (UMC umcTokens.sol)",
+                "contenu": "Bonnes pratiques pour le déploiement et la maintenance des applications du cv-user web."
+            },
+            {
+                "sousTitre": "Expériences",
+                "contenu": "Bonnes pratiques pour le déploiement et la maintenance des applications du cv-user web."
+            },
+            {
+                "sousTitre": "Projets",
+                "contenu": "Bonnes pratiques pour le déploiement et la maintenance des applications du cv-user web."
+            }
+        ]
+    },
+    {
+        "titre": "Compte",
+        "sousSections": [
+            {
+                "sousTitre": "Introduction au Smart Comptra",
+                "contenu": "Présentation de l'agent IA Codex GPT-wallet umcTokens.sol Q:xxx Pi.coin capitale variable"
+            },
+            {
+                "sousTitre": "cnccfp.fs",
+                "contenu": "Comment NeoFS peut aider dans la génération de code front-end et back-end."
+            },
+            {
+                "sousTitre": "Compte Pi.coin & user CV",
+                "contenuMarkdown": "src/md/MVP.md"
+            },
+            {
+                "sousTitre": "lib GPT",
+                "contenuMarkdown": "md/cours-ia-gpt.md"
+            },
+            {
+                "sousTitre": "Bilan pib/tva > user cv",
+                "contenuMarkdown": "src/md/MVP.md"
+            }
+        ]
+    },
+    {
+        "titre": "Bank",
+        "sousSections": [
+            {
+                "contenu": "Techniques et méthodes avancées pour construire des modèles d'IA...",
+                "contenuMarkdown": "md/howto.md"
+            },
+            {
+                "sousTitre": "Banque RIB & CB",
+                "contenuMarkdown": "src/md/MVP.md"
+            },
+            {
+                "sousTitre": "Bilan pib/tva > user cv",
+                "contenuMarkdown": "src/md/MVP.md"
+            }
+        ]
+    }
+]

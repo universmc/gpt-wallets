@@ -31,13 +31,13 @@ server.post('/generate', async (req, res) => {
 });
 
 // Lancer le serveur Express
-server.listen(3777, () => {
-  console.log('Serveur Express démarré sur http://localhost:3777');
+server.listen(5577, () => {
+  console.log('Serveur Express démarré sur http://localhost:5577');
 });
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 340,
+    width: 987,
     height: 610,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'), // Charge le script de préchargement

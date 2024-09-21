@@ -9,6 +9,98 @@ const bot = new Telegraf('7211827506:AAFm-LnaZBgfhmCorXXwWQSe9mCOdXwwnWs', {
       webhookReply: true,
     },
   });
+// Fonction pour générer une image avec DALL-E
+async function generateImage(prompt) {
+  try {
+    const response = await openai.images.generate({
+      model: "dall-e-3",
+      prompt: prompt,
+      n: 1,
+      size: "1792x1024",
+    });
+
+    const imageUrl = response.data[0].url;
+    return imageUrl;
+  } catch (error) {
+    console.error("Erreur lors de la génération de l'image :", error);
+    throw new Error("Impossible de générer l'image.");
+  }
+}
+
+// Commande /imagine pour générer et envoyer une image
+bot.command('imagine', async (ctx) => {
+  // Extraire l'entrée de l'utilisateur du message Telegram
+  const userInput = ctx.message.text.split(' ').slice(1).join(' ');
+
+  // Vérifier si l'utilisateur a fourni un prompt
+  if (!userInput) {
+    ctx.reply("Veuillez fournir une description pour générer l'image. Exemple: `/imagine une ville futuriste sous la pluie`");
+    return;
+  }
+
+  ctx.reply("Génération de l'image en cours, veuillez patienter...");
+
+  try {
+    const imageUrl = await generateImage(userInput);
+
+    // Télécharger et envoyer l'image à l'utilisateur
+    const responseFetch = await fetch(imageUrl);
+    const arrayBuffer = await responseFetch.arrayBuffer(); // Utilise arrayBuffer pour récupérer les données de l'image
+    const buffer = Buffer.from(arrayBuffer); // Convertit ArrayBuffer en Buffer
+    const fileName = `Puzzle_${new Date().toISOString().replace(/[:.]/g, "-")}.webp`;
+
+    fs.writeFileSync(fileName, buffer);
+
+    // Envoyer l'image à l'utilisateur via Telegram
+    await ctx.replyWithPhoto({ source: fileName }, { caption: `Voici votre image générée : ${userInput}` });
+
+    // Supprimer le fichier après l'envoi pour économiser l'espace disque
+    fs.unlinkSync(fileName);
+  } catch (error) {
+    console.error("Erreur lors de l'envoi de l'image :", error);
+    ctx.reply("Désolé, une erreur s'est produite lors de la génération de l'image.");
+  }
+});
+
+
+
+async function generateMarkdown(subject) {
+  return `## Comment [${subject}] - Un guide étape par étape\n\n**Introduction**:\n\nCe guide vous aidera à comprendre et à réaliser le [${subject}]. Il est conçu pour les débutants et les utilisateurs intermédiaires qui souhaitent apprendre les bases de [${subject}].\n\n`;
+}
+
+
+async function main(subject) {
+  try {
+    const completion = await groq.chat.completions.create({
+      model: "gemma2-9b-it",
+      messages: [
+          { role: "assistant", content: `Génération d'un guide Le rôle de développeur chez OpenAI` },
+        { role: "user", content: `Génération d'un guide sur ${subject}` },
+        { role: "system", content: `bienvenue sur Telegram` }
+      ],
+      temperature: 0.5,
+      max_tokens: 4096
+    });
+
+    const mdContent = completion.choices[0].message.content;
+    const outputFilePath = `HowTo_nodeJj-${subject}_` + new Date().toISOString().replace(/[-:TZ]/g, "") + ".md";
+    fs.writeFileSync(outputFilePath, mdContent);
+
+    return `Le How-To sur ${subject} a été enregistré dans ${outputFilePath}`;
+  } catch (error) {
+    console.error("Une erreur s'est produite :", error);
+    return `Erreur : ${error.message}`;
+  }
+}
+
+bot.command('generate', async (ctx) => {
+  const subject = ctx.message.text.split(' ')[1] || 'HowTo_OpenAi';
+  ctx.reply(`Génération du guide pour le sujet : ${subject}...`);
+  const result = await main(subject);
+  ctx.reply(result);
+});
+
+
 
   let conversationLog = [];
 
